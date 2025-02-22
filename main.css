@@ -5,7 +5,7 @@ body {
     font-family: "Iceland", serif;
     margin: 0;
     /* width: 23vw; */
-    height: 100vh;
+    height: 150vh;
     overflow: scroll;
 }
 
@@ -16,7 +16,6 @@ body {
 
 .text-c {
     /* display: flex; */
-
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -47,10 +46,10 @@ h2 {
     font-size: 80px;
     color: white;
 }
-h3{ position:relative;
+h3{ /*position:relative;
     /*top: 49vh;
     left: 35.5vw; */
-    text-align: center;
+    /* text-align: center; */
     font-weight: 400;
     font-style: 50px;
     font-size: 3vw;
@@ -61,8 +60,8 @@ h3{ position:relative;
 
 #dragon-head {
     position: absolute;
-    top: 20%;
-    left: 25%;
+    top: 49%;
+    left: 26%;
     transform: translate(-50%, -50%);
     width: 50%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
@@ -70,17 +69,82 @@ h3{ position:relative;
     display: block;
     transform: scale(.9);
 }
+/*Icon container*/
+.icon-container {
+    width: 70%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 25px;
+    background-color: rgba(244, 236, 244, 0.358);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row: 1fr;
+    justify-content: center;
+    grid-gap:20px;
+
+}
+/* TO DO: icon sizing */
+.icon-container a svg {
+    width: 7%; 
+    height: auto; 
+    margin: auto; 
+}
+.icon-container {
+    width: 70%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 25px;
+    background-color: rgba(244, 236, 244, 0);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-row: 1fr;
+    justify-content: center;
+    grid-gap:20px;
+
+}
+/* trying to adjust the size of the svg /
+.icon-container a svg {
+    width: 15%; 
+    height: auto; / Maintain aspect ratio /
+    margin: auto; / Center the SVG */
+
 
 #mail{
-   transform: scale(.1);
+   /* transform: scale(.1); */
    fill: white;
    position: absolute;
-    top: 69%;
-    left: 2%;
-    width: 50%; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto;
-    display: block;
+    /* top: 69%; */
+    /* left: 2%; */
+    /* width: 50%; Adjust as needed */
+    /* height: auto; Maintain aspect ratio */
+    /* margin: 0 auto; */
+    /* display: block; */
   
 }
-/* settings for mobilelayout */
+
+/* settings for mobile layout */
+@media (max-width: 900px) {
+    body {
+        font-size: 0.8em; /* Adjust the base font size as needed */
+    }
+
+    h1 {
+        font-size: 60px; 
+    }
+
+    h2 {
+        font-size: 40px; 
+    }
+
+    h3 {
+        font-size: 20px; 
+    }
+    .text-c {
+       margin-top:100px;
+    }
+
+}
